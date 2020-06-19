@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+// header
+
+$header-height: 40px;
+
+// footer
+
+$footer-height: 0;
+
+//
+
+$max-index-integer: 9000000000000000;
+
+@function getRandomColor() {
+  @return hsla(
+    math.random($limit: 361),
+    math.random($limit: 100%),
+    math.random($limit: 100%),
+    math.random()
+  );
+}

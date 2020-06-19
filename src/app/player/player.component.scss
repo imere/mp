@@ -1,0 +1,12 @@
+.player {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+app-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}

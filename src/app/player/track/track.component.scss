@@ -1,0 +1,60 @@
+@use "sass:color";
+
+$track-height: 6px;
+
+// track
+
+.track {
+  width: 100%;
+  height: $track-height;
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+// current time
+
+.current {
+  height: $track-height;
+  background-color: color.scale(rgb(22, 5, 255), $saturation: 100%);
+  opacity: 1;
+  animation: 6s linear 0s infinite both bling;
+}
+
+// thumb
+
+.thumb {
+  position: absolute;
+  right: 0;
+  width: $track-height;
+  height: $track-height;
+  background-color: white;
+}
+
+// tip
+
+.time-tip {
+  visibility: hidden;
+  position: absolute;
+  top: -100%;
+  border-radius: 3px;
+  background-color: antiquewhite;
+  white-space: nowrap;
+  user-select: none;
+  transform: translateY(-100%);
+}
+
+.track:hover .time-tip {
+  visibility: visible;
+}
+
+// animation
+
+@keyframes bling {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}

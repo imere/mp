@@ -1,0 +1,6 @@
+@use '../../assets/shared.scss';
+
+.header {
+  position: absolute;
+  height: shared.$header-height;
+}

@@ -1,0 +1,14 @@
+<div
+  class="background"
+  [@backgroundAnimate]="{
+    value: state,
+    params: {
+      image: backgroundConfig.image,
+      color: backgroundConfig.color,
+      x: backgroundConfig.position.x,
+      y: backgroundConfig.position.y,
+      size: backgroundConfig.size,
+      repeat: backgroundConfig.repeat
+    }
+  }"
+></div>

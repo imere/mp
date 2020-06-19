@@ -1,0 +1,22 @@
+@use "sass:color";
+
+.controls {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+button {
+  color: ivory;
+}
+
+.previous,
+.next {
+  transform: scale(1.5);
+}
+
+.play {
+  transform: scale(2.5);
+}

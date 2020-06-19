@@ -1,0 +1,21 @@
+<div
+  class="splash"
+  [@splashStyle]="{
+    value: state,
+    params: {
+      image: splashConfig.image,
+      color: splashConfig.color,
+      x: splashConfig.position.x,
+      y: splashConfig.position.y,
+      size: splashConfig.size,
+      repeat: splashConfig.repeat
+    }
+  }"
+  [@splashAnimate]="{
+    value: state,
+    params: {
+      duration: splashConfig.duration,
+      delay: splashConfig.delay
+    }
+  }"
+></div>

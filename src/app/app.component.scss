@@ -1,0 +1,6 @@
+@use '../assets/shared.scss';
+
+.content {
+  height: 100%;
+  padding: shared.$header-height 0 shared.$footer-height;
+}

@@ -1,0 +1,12 @@
+@use "../../assets/shared.scss";
+
+.splash {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-clip: border-box;
+  z-index: shared.$max-index-integer;
+}

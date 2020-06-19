@@ -1,0 +1,1 @@
+export const MP_APP_NAME = 'MP'

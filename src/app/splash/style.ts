@@ -1,0 +1,26 @@
+import { state, style, trigger } from '@angular/animations';
+
+export const splashStyle = trigger('splashStyle',
+  [
+    state('*',
+      style({
+        backgroundImage: 'url({{image}})',
+        backgroundColor: '{{color}}',
+        backgroundPositionX: '{{x}}',
+        backgroundPositionY: '{{y}}',
+        backgroundSize: '{{size}}',
+        backgroundRepeat: '{{repeat}}',
+      }),
+      {
+        params: {
+          image: 'none',
+          color: 'initial',
+          x: 'initial',
+          y: 'initial',
+          size: 'initial',
+          repeat: 'no-repeat',
+        },
+      },
+    ),
+  ],
+);

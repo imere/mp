@@ -1,0 +1,19 @@
+<div class="cover">
+  <img
+    class="image"
+    [src]="coverConfig.src"
+    (error)="onCoverError($event)"
+    [@coverStyle]="{
+      value: 'show',
+      params: {
+        show: coverConfig.show,
+        backgroundColor: coverConfig.backgroundColor,
+        width: coverConfig.geometry.width,
+        height: coverConfig.geometry.height,
+        objectPosition: coverConfig.objectPosition,
+        objectFit: coverConfig.objectFit
+      }
+    }"
+  />
+  <app-controls></app-controls>
+</div>

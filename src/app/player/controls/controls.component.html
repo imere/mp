@@ -1,0 +1,13 @@
+<div class="controls">
+  <button class="previous">
+    <fa-icon [icon]="previousButton" (click)="previousMusic()"></fa-icon>
+  </button>
+
+  <button class="play">
+    <fa-icon [icon]="playButtonIcons[0]" (click)="togglePlayMusic()"></fa-icon>
+  </button>
+
+  <button class="next">
+    <fa-icon [icon]="nextButton" (click)="nextMusic()"></fa-icon>
+  </button>
+</div>

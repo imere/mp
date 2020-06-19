@@ -1,0 +1,14 @@
+<div
+  #track
+  class="track"
+  (mouseenter)="hovering = true"
+  (mouseleave)="hovering = false"
+  (pointermove)="onPointermove($event)"
+  (pointerdown)="onPointerdown($event)"
+  (pointerup)="onPointerup($event)"
+>
+  <div class="current" [ngStyle]="{ width: percentage + '%' }">
+    <div class="thumb" draggable="true"></div>
+    <div class="time-tip">{{ currentTimeStr }} / {{ durationStr }}</div>
+  </div>
+</div>

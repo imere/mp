@@ -1,0 +1,31 @@
+@use "sass:color";
+
+.cover {
+  width: 100%;
+  position: relative;
+  user-select: none;
+
+  border: thick solid black;
+}
+
+.image {
+  min-width: 200px;
+  min-height: 200px;
+  width: 100%;
+  height: auto;
+}
+
+app-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: color.scale(grey, $alpha: -70%);
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+.cover:hover app-controls {
+  opacity: 1;
+}
